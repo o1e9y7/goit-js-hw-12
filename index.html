@@ -4,82 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW12</title>
     
+    
+    <title>Gallery</title>
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5401a4b0.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-b2578120.js">
     <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-9d53ddb6.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-cce8c05c.css">
   </head>
   <body>
-    <div class="preloader">
-      <div class="preloader__row">
-        <p>load</p>
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-      </div>
-    </div>
-
-    <form autocomplete="off">
-      <input type="text" placeholder="Search images..." />
-      <button type="submit" id="search">Search</button>
+    <form class="search-form">
+      <input
+        class="search-input"
+        type="text"
+        name="search"
+        placeholder="Search images..."
+      />
+      <button class="btn-search" type="submit">Search</button>
     </form>
-
     <ul class="gallery"></ul>
-
-    <button type="button" id="addImg">Load more</button>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <!-- <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div> -->
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <!-- <img
-        class="pic"
-        src="./img/vite-logo.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      /> -->
-    </div>
-  </div>
-</section>
-
-    
-    
-    
-    <!-- <script type="module" src="./main.js"></script> -->
+    <button type="button" class="load">Load more</button>
+    <div class="loader" hidden></div>
   </body>
 </html>
